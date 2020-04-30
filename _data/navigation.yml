@@ -1,0 +1,13 @@
+docs:
+
+- title: Home
+  url: /projeto/
+
+- title: About
+  url: /projeto/about.html
+
+- title: Works
+  url: /projeto/work.html
+
+- title: Contacts
+  url: /projeto/contacts.html
