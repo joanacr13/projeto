@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+<article>
+  <header class="post-header">
+  	<time> {{ page.year }} </time>
+    <h1> {{ page.title | escape }} </h1> 
+
+    {% if page.client %}
+    <p> Client: {{ page.client}}</p>
+    {% endif %}
+
+    {% if page.team %}
+      <p> Team: {{ page.team }}</p>
+    {% endif %}
+
+  </header>
+
+
+  <div class="project-text">
+  	<h2>The challenge</h2>
+  	<p>{{ page.description }}</p></div>
+  </div>
+
+  <div class="project-img">
+    <figure>
+     <img src="{{ site.baseurl }}{{ page.image }}" alt="Photo of {{ image.title | downcase }}">
+  </figure>
+  </div>
+
+
+  {% if page.tools %}
+  <div class="project-text">
+  	<h3>The tools</h3>
+  	<p>{{ page.tools }}</p></div>
+  </div>
+  {% endif %}
+
+</article>

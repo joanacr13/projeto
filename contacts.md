@@ -1,7 +1,6 @@
 ---
-layout: page
-title: Contacts
+layout: contacts
+title: Let's iterate together!
+cta: Drop me a line
 order: 3
 ---
-
-PF resulta!

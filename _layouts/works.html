@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<article>
+  <header class="post-header">
+    <h1>{{ page.title | escape }}</h1>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+  <section id="projects">
+    <ul>
+      {% for project in site.projects %}
+      <li class="">
+        <a href="{{ site.baseurl }}/work/{{ project.slug }}">
+          <img src="{{ site.baseurl}}/assets/img/{{ project.picture }}" alt="Photo of a {{ page.title | downcase }}">
+          <h3>{{ project.title }}</h3>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  
+</article>
+

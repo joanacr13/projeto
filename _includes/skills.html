@@ -1,0 +1,21 @@
+  <section id="skills">
+  	<h2>Skills</h2>
+  		<div class="flex-container skills">
+            	<div class="skill-container">
+                {% for skill in site.skills %}
+                	<figure>
+                		<div class="img-container-circle">
+                    		{{ skill.content }}
+                    	</div>
+                    	<figcaption>
+                    		{{ skill.title }}
+
+                    		{% if skill.subtitle %}
+                    			<p class="handwritting">{{ skill.subtitle }}</p>
+                    		{% endif %}
+                    	</figcaption>
+                	</figure>
+                  {% endfor %}
+                </div>
+        </div>        
+  </section>

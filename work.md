@@ -1,7 +1,5 @@
 ---
-layout: page
+layout: works
 title: Work
 order: 2
 ---
-
-PF resulta!
