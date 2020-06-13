@@ -47,6 +47,17 @@ img {
 }
 
 
+.flex-container {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+
 .skills {
   align-items: flex-start;
   flex-wrap: wrap;
@@ -71,6 +82,14 @@ img {
   flex: 1 0 230px;
 }
 
+figcaption {
+  font-size: 1.2em;
+  margin-top: 30px;
+  text-align: center;
+  color: #3D4645;
+}
+
+
 
 
 /**
@@ -89,24 +108,20 @@ dl, dd, ol, ul, figure {
 
 
 
-/**
- * Wrapper
- */
+/* Wrapper */
 .wrapper {
-  max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-  max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+  max-width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding-right: $spacing-unit;
-  padding-left: $spacing-unit;
+  padding-right: 3%;
+  padding-left: 3%
 
 }
 
 
 
-/**
- * Clearfix
- */
+/* Clearfix */
+
 %clearfix:after {
   content: "";
   display: table;

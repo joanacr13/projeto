@@ -1,11 +1,14 @@
 @import "colors";
 
-header {
+/* Main header */
+
+.home-header {
   background-color: $neutral-color-light;
   box-shadow: 1px 1px 4px 0 $shadow-menu;
   position: fixed;
   width: 100%;
   z-index: 3;
+
   
 
   ul {
@@ -104,4 +107,12 @@ header {
       }
     }
   }
+}
+
+/* Article headers */
+
+.works-header, 
+.about-header, 
+.casestudy-header {
+  margin: 80px 0px 40px 0px;
 }

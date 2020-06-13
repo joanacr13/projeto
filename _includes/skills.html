@@ -5,13 +5,18 @@
                 	<figure>
                 		<div class="img-container-circle">
                     		{{ skill.content }}
-                    	</div>
-                    	<figcaption>
-                    		{{ skill.title }}
-
-                    		{% if skill.subtitle %}
+                    </div>
+                    <figcaption>
+                      {% if skill.subtitle %}
+                    	 <del>{{ skill.title}}</del>
                     			<p class="handwritting">{{ skill.subtitle }}</p>
-                    		{% endif %}
+
+                      {% else %}
+
+                          {{ skill.title}}
+
+                    	{% endif %}
+
                     	</figcaption>
                 	</figure>
                   {% endfor %}
