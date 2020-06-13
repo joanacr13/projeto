@@ -18,22 +18,19 @@ layout: default
  <section id="projects">
   <h2>Curated Work</h2>
     {% assign projects = site.projects | where: "tags", "home" %}
-      <ul>
-        {% for project in projects limit:5 %}
-        <li class="">
+      <div class="projects-container">
+        {% for project in projects limit:4 %}
           <a href="{{ site.baseurl }}/work/{{ project.slug }}">
             <img src="{{ site.baseurl}}/assets/img/{{ project.picture }}" alt="Photo of {{ page.title | downcase }}">
           </a>
-        </li>
         {% endfor %}
-      </ul>
+        </div>
  </section>
 
 
- <section>
-    <h2>Skills</h2>
+
    {% include skills.html %}
- </section>
+
 
  
 

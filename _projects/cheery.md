@@ -1,13 +1,12 @@
 ---
 layout: case-study
-title: DáVida Mobile App
+title: Cheery Mobile App
 description: Lorem ipsum dolor sit amet
 category: ui
 year: 2020
-client: Instituto Português do Sangue
-picture: davida_cover.jpg
+client: Startup
+picture: cheery_cover.jpg
 tags:
 - home
 - destaque
-class: davida
 ---

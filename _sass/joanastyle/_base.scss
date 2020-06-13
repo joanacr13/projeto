@@ -57,6 +57,17 @@ img {
   width: 100%;
 }
 
+/* Projects */
+
+.projects-container { 
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 1.5rem;
+}
+
+
+/* Skills */
+
 
 .skills {
   align-items: flex-start;
@@ -80,6 +91,10 @@ img {
   width: 33.33%;
   align-items: center;
   flex: 1 0 230px;
+
+  figure {
+    margin-bottom: 50px;
+  }
 }
 
 figcaption {
@@ -89,6 +104,40 @@ figcaption {
   color: #3D4645;
 }
 
+
+/* Education */
+
+.course-container {
+  width: 100%;
+  padding: 0 20px 20px 0;
+}
+
+.courses {
+  width: 100%;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+
+.item-detail {
+  text-transform: uppercase;
+  position: relative;
+  letter-spacing: 0.030em;
+  padding-bottom: 4px;
+  margin-bottom: 13px;
+  font-size: 0.9em;
+  font-weight: 500;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 20px;
+    height: 2px;
+    background-color: $secundary-color;
+  }
+}
 
 
 
@@ -138,7 +187,7 @@ dl, dd, ol, ul, figure {
     width: 16px;
     height: 16px;
     display: inline-block;
-    fill: #{$grey-color};
+    fill: #{$primary-color};
     padding-right: 5px;
     vertical-align: text-top;
 }
