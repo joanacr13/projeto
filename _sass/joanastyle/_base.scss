@@ -1,0 +1,137 @@
+@import "colors";
+@import "textstyles";
+
+body {
+  max-width: 100%;
+  margin: 0 auto;
+  text-rendering: optimizeSpeed;
+  background-color: $neutral-color-light;
+  @include text;
+}
+
+
+h1 {
+  @include bigTitle;
+}
+
+h2 {
+  @include mediumTitle;
+}
+
+h3 {
+  @include smallTitle;
+}
+
+h4 {
+  @include subTitle;
+}
+
+p {
+  @include text;
+}
+
+a {
+  color: $primary-color;
+  text-decoration: none;
+
+  &:hover {
+    color: $neutral-color-dark;
+  }
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+
+.skills {
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  img {
+    width: 70px;
+  }
+}
+
+.img-container-circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: $secundary-color;
+  margin: auto;
+}
+
+.skill-container {
+  width: 33.33%;
+  align-items: center;
+  flex: 1 0 230px;
+}
+
+
+
+/**
+ * Reset some basic elements
+ */
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+
+
+/**
+ * Wrapper
+ */
+.wrapper {
+  max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
+  max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: $spacing-unit;
+  padding-left: $spacing-unit;
+
+}
+
+
+
+/**
+ * Clearfix
+ */
+%clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/**
+ * Icons
+ */
+
+.svg-icon {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    fill: #{$grey-color};
+    padding-right: 5px;
+    vertical-align: text-top;
+}
+
+.social-media-list {
+  li + li {
+    padding-top: 5px;
+  }
+}
+
+

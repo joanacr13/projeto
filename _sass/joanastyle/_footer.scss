@@ -1,0 +1,36 @@
+@import "colors";
+
+/**
+ * Incompleto
+ */
+
+footer {
+  position: relative;
+  background-color: $secundary-color;
+  color: #D26230;
+  height: 30px;
+  padding: 10px 10px 10px 20px;
+  font-size: 0.7em;
+  text-transform: uppercase;
+  bottom: 0;
+
+  p {
+    color: #D26230;
+  }
+}
+
+.fab {
+  font-size: 1.7em;
+  color: #D26230;
+  padding-left: 5px;
+
+  &:hover {
+    color: #AE5600;
+  }
+}
+
+.socialmedia {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+}
