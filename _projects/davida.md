@@ -6,8 +6,5 @@ category: ui
 year: 2020
 client: Instituto Português do Sangue
 picture: davida_cover.jpg
-tags:
-- home
-- destaque
-class: davida
+tags: home
 ---

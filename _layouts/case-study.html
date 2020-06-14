@@ -24,9 +24,11 @@ layout: default
   </div>
 
   <div class="project-img">
+    {% if page.picture %}
     <figure>
-     <img src="{{ site.baseurl }}{{ page.image }}" alt="Photo of {{ image.title | downcase }}">
+     <img src="{{ site.baseurl}}/assets/img/{{ page.picture }}" alt="Photo of {{ page.title | downcase }}">
   </figure>
+  {% endif %}
   </div>
 
 

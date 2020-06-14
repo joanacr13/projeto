@@ -6,7 +6,5 @@ category: ui
 year: 2020
 client: Startup
 picture: cheery_cover.jpg
-tags:
-- home
-- destaque
+tags: home
 ---
