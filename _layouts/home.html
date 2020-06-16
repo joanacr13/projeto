@@ -16,13 +16,20 @@ layout: default
  </section>
 
  <section id="projects">
-  <h2>Curated Work</h2>
+  <h2>Selected Works</h2>
     {% assign projects = site.projects | where: "tags", "home" %}
       <div class="projects-container">
         {% for project in projects limit:4 %}
+        <div class="project-card">
           <a href="{{ site.baseurl }}/work/{{ project.slug }}">
-            <img src="{{ site.baseurl}}/assets/img/{{ project.picture }}" alt="Photo of {{ page.title | downcase }}">
+            <img src="{{ site.baseurl}}/assets/img/{{ project.picture }}" alt="Photo of {{ project.title | downcase }}">
+
+            <div class="overlay">
+              <div class="card-text">{{ project.title }}</div>
+            </div>
+
           </a>
+          </div>
         {% endfor %}
         </div>
  </section>

@@ -62,8 +62,82 @@ img {
 .projects-container { 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  grid-gap: 1.5rem;
+  grid-gap: 2rem;
+  margin-top: 50px;
+
+  img {
+  position: relative;
+
+  &:hover {
+animation: updown 1s 1 alternate;
+-webkit-animation: updown 1s 1 alternate; /* Safari e chrome*/
+  }
+  }
 }
+
+@keyframes updown {
+from {bottom:0px; background-color: #900;}
+to {bottom:10px; background-color: #000;}
+from {bottom:10px; background-color:#000;}
+to {bottom:0px; background-color: #900;}
+}
+
+/* Safari e Chrome*/
+@-webkit-keyframes updown
+{ from {bottom:0px; background-color: #900;}
+to {bottom:10px; background-color: #000;}
+from {bottom:10px; background-color:#000;}
+to {bottom:0px; background-color: #900;}
+}
+
+.project-title {
+  margin-top: 20px;
+}
+
+a .project-description {
+  color: $neutral-color-dark;
+  text-decoration: none;
+
+  &:hover {
+    color: $primary-color
+    $neutral-color-dark;
+  }
+}
+
+.project-card {
+  position: relative;
+
+  &:hover .overlay {
+  opacity: 0.9;
+  }
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: $secundary-color;
+}
+
+
+.card-text {
+  @include smallTitle;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
 
 /* Courses */
 
