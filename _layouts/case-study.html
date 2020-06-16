@@ -4,24 +4,8 @@ layout: default
 
 <article>
   <header class="casestudy-header">
-  	<time> {{ page.year }} </time>
     <h1> {{ page.title | escape }} </h1> 
-
-    {% if page.client %}
-    <p> Client: {{ page.client}}</p>
-    {% endif %}
-
-    {% if page.team %}
-      <p> Team: {{ page.team }}</p>
-    {% endif %}
-
   </header>
-
-
-  <div class="project-text">
-  	<h2>The challenge</h2>
-  	<p>{{ page.description }}</p></div>
-  </div>
 
   <div class="project-img">
     {% if page.picture %}
@@ -31,12 +15,27 @@ layout: default
   {% endif %}
   </div>
 
-
-  {% if page.tools %}
-  <div class="project-text">
-  	<h3>The tools</h3>
-  	<p>{{ page.tools }}</p></div>
+   <div class="project-text">
+    <h2>The challenge</h2>
+    <p>{{ page.description }}</p></div>
   </div>
-  {% endif %}
+
+  <aside>
+    {% if page.year %}
+    <p><strong>Year:</strong> <time> {{ page.year }} </time></p>
+    {% endif %}
+
+    {% if page.client %}
+    <p><strong>Client:</strong> {{ page.client}} </p>
+    {% endif %}
+
+    {% if page.tools %}
+      <p><strong>Tools:</strong> {{ page.tools }} </p></div>
+    {% endif %}
+
+    {% if page.team %}
+      <p><strong>Team:</strong> {{ page.team }} </p>
+    {% endif %}
+  </aside>
 
 </article>

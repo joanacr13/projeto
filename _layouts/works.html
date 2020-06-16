@@ -2,17 +2,16 @@
 layout: default
 ---
 
-<article>
-  <header class="works-header">
+<section class="works-header">
     <h1>{{ page.title | escape }}</h1>
-  </header>
+  </section>
 
-  <div class="post-content">
+  <section class="post-content">
     {{ content }}
-  </div>
+  </section>
   
       
-      <div class="projects-container">
+      <section class="projects-container">
         {% for project in site.projects %}
           <a href="{{ site.baseurl }}/work/{{ project.slug }}">
             <img src="{{ site.baseurl}}/assets/img/{{ project.picture }}" alt="Photo of a {{ page.title | downcase }}">
@@ -20,12 +19,6 @@ layout: default
             <p class="project-description">{{ project.description }}</p>
           </a>
         {% endfor %}
-      </div>
-      
-    
-    </div>
-  </section>
+</section>
 
-  
-</article>
 

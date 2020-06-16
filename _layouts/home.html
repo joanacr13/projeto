@@ -2,17 +2,18 @@
 layout: default
 ---
 
-<div class="home">
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
-
- <section id="top">
-        <div id="about">
-          <div class="intro-container">
-            <p class="intro-subtitle"><em> {{ page.subtitle }}</em></p>
-            <p class="about-text"> {{ content }} </p>
-          </div>
+<section id="top">
+  <div id="home-about">
+    <div class="intro-container">
+      {%- if page.title -%}
+        <h1>{{ page.title }}</h1>
+      {%- endif -%}
+    </div>
+    <div class="home-about">
+      <p class="intro-subtitle"><em> {{ page.subtitle }}</em></p>
+      <p class="about-text"> {{ content }} </p>
+    </div>
+  </div>
  </section>
 
  <section id="projects">

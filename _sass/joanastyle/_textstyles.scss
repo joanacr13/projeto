@@ -19,21 +19,24 @@
 
 @mixin bigTitle {
 	font-family: 'Playfair Display', serif;
-    font-size: 5em;
+    font-size: 3em;
 	color: $neutral-color-dark;
+	line-height: 1.6;
 }
 
 @mixin mediumTitle {
 	font-family: 'Playfair Display', serif;
     font-size: 2em;
 	letter-spacing: 0.050em;
-	color: $neutral-color-dark; 
+	color: $neutral-color-dark;
+	line-height: 1.6; 
 }
 
 @mixin smallTitle {
 	font-family: 'Playfair Display', serif;
     font-size: 1.3em;
 	color: $neutral-color-dark;
+	line-height: 1.6;
 }
 
 @mixin subTitle {
@@ -41,6 +44,7 @@
 	font-weight: 400;
     font-size: 1em;
 	color: $primary-color;
+	line-height: 1.6;
 }
 
 @mixin text {
@@ -48,6 +52,7 @@
 	font-weight: 400;
     font-size: 1em;
     line-height: 25px;
+    line-height: 1.6;
 }
 
 @mixin cta {

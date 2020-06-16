@@ -3,7 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
-title: Hi, I'm Joana Reis
+title: Hi, I'm Joana
 subtitle: I design digital products & experiences.
 ---
 

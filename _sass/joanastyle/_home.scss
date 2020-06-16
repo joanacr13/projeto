@@ -3,30 +3,29 @@
 }
 
 #top {
-  padding-top: 300px;
+  padding-top: 100px;
   background-image: url(../assets/img/banner-mobile@2x.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   background-attachment: scroll;
 }
 
+
 .intro-container {
-  background-color: #FDFBFA;
-  margin-bottom: 200px;
   width: 100%;
 }
 
 p.intro-subtitle {
-  font-size: 1.7em;
-  color: #879392;
+  @include subTitle;
+  font-size: 1.3em;
 }
 
 .about-text {
   width: 100%;
-  margin-bottom: 300px;
+  margin-bottom: 28px;
 }
 
-#about, #education, #skills, #projects {
+#home-about, #education, #skills, #projects, #experience {
   margin: 0px 3% 50px 3%;
 }
 
