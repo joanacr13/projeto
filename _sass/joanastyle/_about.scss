@@ -1,38 +1,27 @@
-.casestudy-grid  {
+.about-grid  {
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-gap: 2rem;
 	margin: 1em;
 	grid-template-areas:
-    "header"
     "img"
-    "text"
-    "details";
+    "text";
 }
 
-.casestudy-header  {
-	grid-area: header;
-}
-
-.casestudy-img  {
+.about-img  {
 	grid-area: img;
 }
 
-.casestudy-text  {
+.about-text  {
 	grid-area: text;
 }
 
-.casestudy-details {
-	grid-area: details;
-}
 
  @media screen and (min-width: 600px) {
- .casestudy-grid {
+ .about-grid {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas:
-      "header header header"
-      "img img tex"
-      "img img details";
+      "img text text";
   }
 }

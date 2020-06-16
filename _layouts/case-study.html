@@ -2,25 +2,27 @@
 layout: default
 ---
 
-<article>
-  <header class="casestudy-header">
+<div class="casestudy-grid">
+  <section class="casestudy-header">
     <h1> {{ page.title | escape }} </h1> 
-  </header>
+  </section>
 
-  <div class="project-img">
-    {% if page.picture %}
-    <figure>
-     <img src="{{ site.baseurl}}/assets/img/{{ page.picture }}" alt="Photo of {{ page.title | downcase }}">
-  </figure>
-  {% endif %}
-  </div>
+  <section class="casestudy-img">
+    <div class="project-img">
+      {% if page.picture %}
+        <figure>
+          <img src="{{ site.baseurl}}/assets/img/{{ page.picture }}" alt="Photo of {{ page.title | downcase }}">
+        </figure>
+      {% endif %}
+    </div>
+  </section>
 
-   <div class="project-text">
+  <section class="project-text">
     <h2>The challenge</h2>
-    <p>{{ page.description }}</p></div>
-  </div>
+    <p>{{ page.description }}</p>
+</section>
 
-  <aside>
+  <section class="casestudy-details">
     {% if page.year %}
     <p><strong>Year:</strong> <time> {{ page.year }} </time></p>
     {% endif %}
@@ -30,12 +32,11 @@ layout: default
     {% endif %}
 
     {% if page.tools %}
-      <p><strong>Tools:</strong> {{ page.tools }} </p></div>
+      <p><strong>Tools:</strong> {{ page.tools }} </p>
     {% endif %}
 
     {% if page.team %}
       <p><strong>Team:</strong> {{ page.team }} </p>
     {% endif %}
-  </aside>
-
-</article>
+  </section>
+</div>

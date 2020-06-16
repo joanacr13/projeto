@@ -198,7 +198,9 @@ figcaption {
   color: #3D4645;
 }
 
-
+.skill-icon {
+  fill: $primary-color;
+}
 /* Education */
 
 
@@ -295,7 +297,7 @@ dl, dd, ol, ul, figure {
     width: 16px;
     height: 16px;
     display: inline-block;
-    fill: #{$primary-color};
+    fill: $primary-color;
     padding-right: 5px;
     vertical-align: text-top;
 }

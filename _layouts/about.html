@@ -1,13 +1,13 @@
 ---
 layout: default
 ---
-<section> 
+
   <h1 class="about-header">{{ page.title | escape }}</h1>
-  <div class="about">
-  	<div class="about-img"><img src="{{ site.baseurl}}/assets/img/{{ page.picture }}" alt="Photo of {{ page.subtitle }}"></div>
-  	<div class="about-text">{{ content }}</div>
+  <div class="about-grid">
+    <div class="about-img"><img src="{{ site.baseurl}}/assets/img/{{ page.picture }}" alt="Photo of {{ page.subtitle }}"></div>
+    <div class="about-text">{{ content }}
+    </div>
   </div>
-</section>
 
 <section id="experience">
             <h2>Experience</h2>
@@ -56,6 +56,6 @@ layout: default
             </div>
   </section>
 
-</article>
+
 
 

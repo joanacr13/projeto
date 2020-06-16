@@ -3,14 +3,14 @@ layout: default
 ---
 
 <section id="top">
-  <div id="home-about">
     <div class="intro-container">
       {%- if page.title -%}
         <h1>{{ page.title }}</h1>
       {%- endif -%}
+      <p class="intro-subtitle"> {{ page.subtitle }} </p>
     </div>
+    <figure class="home-img"><img src="{{ site.baseurl}}/assets/img/{{ page.picture }}" alt="Photo of {{ page.title | downcase }}"></figure>
     <div class="home-about">
-      <p class="intro-subtitle"><em> {{ page.subtitle }}</em></p>
       <p class="about-text"> {{ content }} </p>
     </div>
   </div>
