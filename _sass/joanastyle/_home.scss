@@ -16,8 +16,18 @@ p.intro-subtitle {
   margin-bottom: 28px;
 }
 
-#top, #education, #skills, #projects, #experience {
+.contacts {
+ position: relative;
+ top: 0;
+  margin-top: 100px;
+}
+
+#top, #education, #skills, #projects, #experience, {
   margin: 0px 5% 50px 5%;
+}
+
+.cta {
+	@include cta;
 }
 
 .contact {
@@ -34,7 +44,7 @@ p.intro-subtitle {
 
     &:hover {
       text-decoration: underline;
-      color: #fff;
+      color: $primary-color;
       cursor: pointer;
     }
   }
@@ -52,6 +62,8 @@ p.intro-subtitle {
 }
 
 .contact p {
+  @include menuItems;
   font-size: 1em;
-  color: #FFF;
+  color: $neutral-color-dark;
+  padding: 0px;
 }

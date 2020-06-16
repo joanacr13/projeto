@@ -3,7 +3,8 @@
 /* Incompleto */
 
 footer {
-  position: relative;
+  position: absolute;
+  bottom: 0;
   background-color: $secundary-color;
   color: #D26230;
   height: 30px;
