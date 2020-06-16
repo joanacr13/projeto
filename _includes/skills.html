@@ -1,8 +1,9 @@
   <section id="skills">
     <h2>Skills</h2>
   		<div class="flex-container skills">
+        {% for skill in site.skills %}
             	<div class="skill-container">
-                {% for skill in site.skills %}
+                
                 	<figure>
                 		<div class="img-container-circle">
                     		{{ skill.content }}
@@ -20,7 +21,8 @@
 
                     	</figcaption>
                 	</figure>
-                  {% endfor %}
+                 
                 </div>
+                 {% endfor %}
         </div>        
   </section>

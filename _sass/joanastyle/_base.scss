@@ -61,7 +61,7 @@ img {
 
 .projects-container { 
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 2rem;
   margin-top: 50px;
 
@@ -137,13 +137,25 @@ a .project-description {
   text-align: center;
 }
 
+/* About */
+
+.about-img { 
+  width: 100px;
+  transition: width 2s, height 2s, transform 2s;
+
+  &:hover {
+  width: 300px;
+  transform: rotate(360deg);
+  }
+}
+
 
 
 /* Courses */
 
 .courses-grid { 
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 2rem;
   margin-top: 30px;
 }
@@ -292,6 +304,33 @@ dl, dd, ol, ul, figure {
   li + li {
     padding-top: 5px;
   }
+}
+
+
+/* tablet & desktop */
+
+@media screen and (min-width: 756px) {
+
+header {
+  li {
+    float: left;
+
+    a {
+      padding: 20px 30px;
+    }
+  }
+
+  .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+}
+
 }
 
 
