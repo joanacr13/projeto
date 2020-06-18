@@ -1,9 +1,19 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .casestudy-grid  {
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-gap: 2rem;
-	margin: 1em;
-	grid-template-areas:
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+  margin: 1em;
+  -ms-grid-rows: auto 2rem auto 2rem auto 2rem auto;
+      grid-template-areas:
     "header"
     "img"
     "text"
@@ -11,28 +21,53 @@
 }
 
 .casestudy-header  {
-	grid-area: header;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
 }
 
 .casestudy-img  {
-	grid-area: img;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: img;
 }
 
 .casestudy-text  {
-	grid-area: text;
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: text;
 }
 
 .casestudy-details {
-	grid-area: details;
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  grid-area: details;
 }
 
  @media screen and (min-width: 600px) {
  .casestudy-grid {
+    -ms-grid-columns: 1fr 2rem 1fr 2rem 1fr;
     grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: auto;
     grid-template-rows: auto;
-    grid-template-areas:
+        grid-template-areas:
       "header header header"
       "img img tex"
       "img img details";
+  }
+ .casestudy-header {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
+  }
+ .casestudy-img {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+  }
+ .casestudy-details {
+    -ms-grid-row: 5;
+    -ms-grid-column: 5;
   }
 }

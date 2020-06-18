@@ -1,7 +1,7 @@
 ---
 layout: case-study
 title: FBAUL Alumni
-description: Nourish the connection between Alumni and FBAUL, providing helpful content and tools to to support students’ future and keep the academic community active. 
+description: Provide helpful content and tools to to support students’ future and keep the academic community active. 
 year: 2019
 client: Faculdade de Belas Artes, Universidade de Lisboa
 team: Bárbara Marcelino, Joana Reis e Marta Duarte
