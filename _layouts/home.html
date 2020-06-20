@@ -2,18 +2,23 @@
 layout: default
 ---
 
-<section id="top">
+<section id="top" class="intro-grid">
     <div class="intro-container">
+
       {%- if page.title -%}
+
         <h1>{{ page.title }}</h1>
+
       {%- endif -%}
+
       <p class="intro-subtitle"> {{ page.subtitle }} </p>
     </div>
+
     <figure class="home-img"><img src="{{ site.baseurl}}/assets/img/{{ page.picture }}" alt="Photo of {{ page.title | downcase }}"></figure>
+
     <div class="home-about">
       <p class="about-text"> {{ content }} </p>
-    </div>
-  </div>
+    </div> 
  </section>
 
  <section id="projects">
@@ -21,33 +26,27 @@ layout: default
     {% assign projects = site.projects | where: "tags", "home" %}
       <div class="projects-container">
         {% for project in projects limit:4 %}
-        <div class="project-card">
-          <a href="{{ site.baseurl }}/work/{{ project.slug }}">
-            <img src="{{ site.baseurl}}/assets/img/{{ project.picture }}" alt="Photo of {{ project.title | downcase }}">
+          <div class="project-card">
+            <a href="{{ site.baseurl }}/work/{{ project.slug }}">
+              <img src="{{ site.baseurl}}/assets/img/{{ project.picture }}" alt="Photo of {{ project.title | downcase }}">
 
-            <div class="overlay">
-              <div class="card-text">{{ project.title }}</div>
-            </div>
-
-          </a>
+              <div class="overlay">
+                <div class="card-text">{{ project.title }}</div>
+              </div>
+            </a>
           </div>
         {% endfor %}
-        </div>
+      </div>
  </section>
 
-
-
-   {% include skills.html %}
-
-
- 
+   {% include skills.html %} 
 
  <section id="sticky-contact">
         <div class="empty-block">
         </div>
         <div class="contact">
-          <a href="mailto:reisjoanac@gmail.com"><h5 class="cta"><i class="fas fa-long-arrow-alt-right"></i> Let´s talk</h5></a>
-          <p>I’d love to work with you!</p>
+          <a href="mailto:reisjoanac@gmail.com"><h5 class="cta"><i class="fas fa-long-arrow-alt-right"></i>Let´s iterate together!</h5></a>
+          <p>Drop me a line</p>
         </div>
  </section>
 

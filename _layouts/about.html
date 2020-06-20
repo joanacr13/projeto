@@ -2,60 +2,67 @@
 layout: default
 ---
 
-  <h1 class="about-header">{{ page.title | escape }}</h1>
-  <div class="about-grid">
-    <div class="about-img"><img src="{{ site.baseurl}}/assets/img/{{ page.picture }}" alt="Photo of {{ page.subtitle }}"></div>
-    <div class="about-text">{{ content }}
+<h1 class="about-header">
+    {{ page.title | escape }}
+</h1>
+    <div class="about-grid">
+        <div class="about-img">
+            <img src="{{ site.baseurl}}/assets/img/{{ page.picture }}" alt="Photo of {{ page.subtitle }}">
+        </div>
+        <div class="about-text">
+            {{ content }}
+        </div>
     </div>
-  </div>
 
 <section id="experience">
-            <h2>Experience</h2>
-            <p class="status-experience">Current Positions</p>
-            <div class="experience-grid courses">
+    <h2>Experience</h2>
+    <p class="status-experience">Current Positions</p>
+    <div class="experience-grid courses">
+        {% assign jobs = site.experience | where: "category", "current-position" %}
+        
+        {% for job in jobs %}
 
-            	{% assign jobs = site.experience | where: "category", "current-position" %}
-        		    
-                {% for job in jobs %}
-            		
-                <div class="course-container">
-                		<p class="item-detail">{{ job.year }}</p>
-                		<h3>{{ job.title }}</h3>
-                		<h4>{{ job.company }}</h4>
-            		</div>
+            <div class="course-container">
+                <p class="item-detail">{{ job.year }}</p>
+                <h3>{{ job.title }}</h3>
+                <h4>{{ job.company }}</h4>
+            </div>
               	
-                {% endfor %}
+        {% endfor %}
+    </div>
+
+    <p class="status-experience">Former Positions</p>
+    <div class="experience-grid courses">
+        {% assign jobs = site.experience | where: "category", "former-position" %}
+        
+        {% for job in jobs %}
+
+            <div class="course-container">
+                <p class="item-detail">{{ job.year }}</p>
+                <h3>{{ job.title }}</h3>
+                <h4>{{ job.company }}</h4>
             </div>
 
-            <p class="status-experience">Former Positions</p>
-            <div class="experience-grid courses">
-            	{% assign jobs = site.experience | where: "category", "former-position" %}
-        		{% for job in jobs %}
-            		<div class="course-container">
-                		<p class="item-detail">{{ job.year }}</p>
-                		<h3>{{ job.title }}</h3>
-                		<h4>{{ job.company }}</h4>
-            		</div>
+        {% endfor %}
+
+    </div>
+</section>
+
+<section id="education">
+    <h2>Education</h2>
+    <div class="courses-grid courses">
+        {% for course in site.education %}
+            
+            <div class="course-container">
+                <p class="item-detail">{{ course.year }}</p>
+                <h3>{{ course.title }}</h3>
+                <h4>{{ course.school }}</h4>
+                <p>{{ course.description }}</p>
+            </div>
+
               	{% endfor %}
+
             </div>
-  </section>
+</section>
 
-{% include skills.html %}
-
-  <section id="education">
-            <h2>Education</h2>
-            <div class="courses-grid courses">
-        		{% for course in site.education %}
-            		<div class="course-container">
-                		<p class="item-detail">{{ course.year }}</p>
-                		<h3>{{ course.title }}</h3>
-                		<h4>{{ course.school }}</h4>
-                		<p>{{ course.description }}</p>
-            		</div>
-              	{% endfor %}
-            </div>
-  </section>
-
-
-
-
+  {% include skills.html %}

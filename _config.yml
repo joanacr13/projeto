@@ -26,6 +26,7 @@ baseurl: "/projeto" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 behance_username:  reisjoana
 linkedin_username: joanacreis
+dribbble_username: joanacr
 collections:
   education:
     output: false

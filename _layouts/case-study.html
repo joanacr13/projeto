@@ -20,11 +20,12 @@ layout: default
   <section class="project-text">
     <h2>The challenge</h2>
     <p>{{ page.description }}</p>
-</section>
+    <p>{{ page.text }}</p>
+  </section>
 
   <section class="casestudy-details">
     {% if page.year %}
-    <p><strong>Year:</strong> <time> {{ page.year }} </time></p>
+      <p><strong>Year:</strong> <time> {{ page.year }} </time></p>
     {% endif %}
 
     {% if page.client %}

@@ -2,7 +2,10 @@
 layout: default
 ---
 
-<div class="contacts">
-	<h1> {{ page.title }}</h1>
-	<p> {{ page.cta }} <p>
-</div>
+<section class="about-grid">
+	<figure class="about-img"><img src="{{ site.baseurl}}/assets/img/{{ page.picture }}" alt="Photo of {{ page.title | downcase }}"></figure>
+	<div class="about-text">
+		<h1> {{ page.title }}</h1>
+		<p> {{ page.cta }} <p>
+	</div>
+</section>

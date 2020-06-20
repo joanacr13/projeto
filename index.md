@@ -5,7 +5,7 @@
 layout: home
 title: Hi, I'm Joana
 subtitle: I design digital products & experiences.
-picture: banner-mobile@2x.jpg
+picture: banner-illustration.png
 ---
 
 I’m a UI / UX designer based in Lisbon. I’ve specialised in crafting end-to-end digital experiences and I'm focused on delivering solutions that have a meaningful impact on people's lives. Taking projects from a holistic perspective, my sweet spot is where user needs meet highly polished and intuitive interfaces. 

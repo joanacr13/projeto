@@ -4,21 +4,25 @@ layout: default
 
 <section class="works-header">
     <h1>{{ page.title | escape }}</h1>
-  </section>
+</section>
 
-  <section class="post-content">
+<section class="post-content">
     {{ content }}
-  </section>
+</section>
   
       
-      <section class="projects-container">
-        {% for project in site.projects %}
-          <a href="{{ site.baseurl }}/work/{{ project.slug }}">
-            <img src="{{ site.baseurl}}/assets/img/{{ project.picture }}" alt="Photo of a {{ page.title | downcase }}">
-            <h3 class="project-title">{{ project.title }}</h3>
-            <p class="project-description">{{ project.description }}</p>
-          </a>
-        {% endfor %}
+<section class="projects-container">
+
+  {% for project in site.projects %}
+  
+    <a href="{{ site.baseurl }}/work/{{ project.slug }}">
+      <img src="{{ site.baseurl}}/assets/img/{{ project.picture }}" alt="Photo of a {{ page.title | downcase }}">
+      <h3 class="project-title">{{ project.title }}</h3>
+      <p class="project-description">{{ project.description }}</p>
+    </a>
+
+  {% endfor %}
+
 </section>
 
 
