@@ -41,20 +41,22 @@
       "intro img"
       "text img"
   }
+
  .intro-container {
     -ms-grid-row: 1;
     -ms-grid-column: 1
   }
+
  .home-img {
     -ms-grid-row: 1;
     -ms-grid-row-span: 3;
     -ms-grid-column: 3
   }
+
  .home-about {
     -ms-grid-row: 3;
     -ms-grid-column: 1
   }
-
 }
 
 
@@ -111,7 +113,7 @@ p.intro-subtitle {
 }
 
 #sticky-contact {
-  background: linear-gradient(to bottom, #FDFBFA calc(100% - 200px), transparent 0);
+  background: linear-gradient(to bottom, $neutral-color-light calc(100% - 200px), transparent 0);
 }
 
 .empty-block {
